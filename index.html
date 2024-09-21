@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mytitle</title>
+    <style>
+      /*css 전용 주석
+        td 태그에 대해 테두리 색깔 일괄 변경*/
+      td {
+        border: 1px solid black;
+        width: 32px;
+      }
+      body {
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <p style="color: violet">글 적을때 쓰는 태그</p>
+    <h1>제목1</h1>
+    <h2>제목2</h2>
+    <h6>제목6</h6>
+
+    <button>버튼</button>
+    <button
+      style="color: white; background: yellowgreen; width: 100px; height: 60px"
+    >
+      버튼2
+    </button>
+
+    <br />
+    <a href="https://www.naver.com" target="_blank">네이버로 이동</a>
+    <!--타겟 블랭크: 새 창에서 링크 열기-->
+
+    <a href="https://www.google.com">
+      <button>구글로 이동</button>
+    </a>
+
+    <br />
+    <!--사진을 눌렀을때 구글로 이동-->
+    <a href="https://www.google.com">
+      <img src="happy.png" width="150px" height="=150px" />
+    </a>
+
+    <span style="color: green">의미없는 span</span>
+
+    <h2>기호 목록</h2>
+    <ul>
+      <li>1번</li>
+      <li>2번</li>
+      <li>3번</li>
+    </ul>
+
+    <hr />
+
+    <h2>숫자 목록</h2>
+    <ol>
+      <li>1번</li>
+      <li>2번</li>
+      <li>3번</li>
+    </ol>
+
+    <div style="background: skyblue"><strong>안녕</strong></div>
+
+    <div style="background: greenyellow">
+      <textarea></textarea>
+      <label for="my-input">입력하세요</label>
+      <input id="my-input" />
+      <input type="checkbox" />
+      <select>
+        <option>1번</option>
+        <option>2번</option>
+        <option>3번</option>
+      </select>
+    </div>
+
+    <table>
+      table을 조용하게 만들기를 한번 해봅시다
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+<!--
+<!DOCTYPE html>: html5 버전 기준으로 작성하는 문서
+<html>: HTML문서의 시작과 끝을 정의
+<head>: 메타데이터(문서 제목, 문자 인코딩 등 설정)을 적는 공간
+<title>: 문서의 제목
+<meta>: 문자열 설정, 문서 보기 설정 등을 입력
+<link>: 특정 파일(css)을 연결 (별도 파일에 작성)
+<style>: style 설정 태그 (html 안에 작성)
+<script>: 자바스크립트 파일을 연결
+<body>: 문서 본문의 내용을 포함하는 공간
+<h1> ~ <h6>: 제목글
+<p> 본문글, 자동 줄바꿈
+<span>: 본문글, 줄바꿈 없이 스타일을 주기위한 태그
+<a>: 하이퍼링크를 만듦. href 속성을 통해 이동할 주소 설정
+<img>: 이미지 태그, src 속성을 통해 보여줄 이미지 설정
+<ul>: 번호없는 리스트(unordered list),  li 태그와 함께 사용
+<ol>: 번호있는 리스트(ordered list), li 태그와 함께 사용
+<li>: 각 리스트(항목), ul 또는 ol 태그 안에서 사용
+<div>: 구간 나누기(division), 기본 width: 100%, height: 0. 높이는 태그 안의 내용물 크기에 따라 증가
+<strong>: 적은 글을 굵게 만듦
+<textarea>: 여러 줄로 글을 입력할 수 있는 공간을 제공
+<input>: 한줄로 글을 입력할 수 있는 공간
+<select>: 여러 목록을 보여줘서 선택하게 하는 태그
+<option>: <select> 태그 안에 사용
+<label>: <input> 태그에 제목 설정
+<form>: 감싸고 있는 <input>, <textarea>, <select> 등 입력을 받은 내용을 전송하기 위한 태그
+<video>: 비디오 추가
+<audio>: 오디오 추가
+<canvas>: 그림 그리는 공간 제공
+<hr>: 가로선 그리기
+<table>: 차트 생성
+<tr>: <table> 태그 안에 사용, 가로 행 추가
+<td>: 세로 열 추가 (th로 사용하면 굵은 글씨에 가운데 정렬)
+-->
