@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html4</title>
+    <style>
+        body{
+            width: 800px;
+        }
+        .container{
+            /*
+            display:
+            -block: 한줄 모두 차지, 줄바꿈(div, p, h1~6)
+            -inline: 내 크기만큼만 차지, 줄바꿈 없음(a, img, span)
+            -inline-block: 내 크기만큼만 차지, 줄바꿈 없음, 크기변경 가능
+            -flex: 내부 요소의 가로정렬/세로정렬 편하게 해줌
+            -grid: 내부 요소의 표 형태로 정렬 편하게 해줌
+            */
+            display: flex;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: skyblue; height: 100px;"></div>
+    <div class="container">
+        <div style="background-color: blue; width: 20%">
+            <p>1</p>
+            <p>1</p>
+        </div>
+        <div style="background-color: coral; width: 80%">
+            <p>2</p>
+        </div>
+    </div>
+    <div style="background-color: grey; height: 100px; display: flex;"><p>3</p></div>
+</body>
+</html>

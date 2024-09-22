@@ -1,0 +1,7 @@
+git init
+git config --global user.email "깃허브이메일"
+git config --global user.name "깃허브이름"
+
+git add .
+git commit -m "첫번째 업로드"
+git push origin master
