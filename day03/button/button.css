@@ -1,0 +1,36 @@
+.member{
+    color:#73a0b8;
+    border:1px solid #73a0b8;
+    border-radius: 4px;
+    background-color: white;
+}
+.copy_1{
+    color:black;
+    border: none;
+    border-radius: 6px;
+    background-color: #98eccb;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top:8px;
+    padding-bottom: 4px;
+}
+.copy_2{
+    color:black;
+    border: none;
+    border-radius: 6px;
+    background-color: #9dd7ff;
+    padding-top:8px;
+    padding-bottom: 4px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.copy_3{
+    color:black;
+    border: none;
+    border-radius: 6px;
+    background-color: #c9c5ff;
+    padding-top:8px;
+    padding-bottom: 4px;
+    font-size: 20px;
+    font-weight: 600;
+}
