@@ -1,0 +1,18 @@
+.coupon {
+  background-color: blue;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 18px 40px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.share {
+  background-color: #ebebeb;
+  border: none;
+  border-radius: 6px;
+  color: grey;
+  padding: 18px 25px;
+  font-size: 15px;
+  font-weight: 700;
+}
