@@ -1,0 +1,40 @@
+body {
+  background-color: grey;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+  width: fit-content;
+}
+.box {
+  width: 100px;
+  height: 100px;
+}
+.color1 {
+  background-color: red;
+  position: fixed;
+  top: 0;
+}
+.color2 {
+  background-color: blue;
+  position: relative;
+}
+.color3 {
+  background-color: green;
+}
+.color4 {
+  background-color: yellow;
+  /* 포지션 위치 조정 속성 top bottom left right */
+  /* relative: 지금 위치에서 */
+  position: relative;
+  top: 10px;
+  left: 10px;
+  /* 레이어 */
+  z-index: 1;
+}
+.text {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}

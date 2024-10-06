@@ -1,0 +1,12 @@
+.header {
+  width: 100vw;
+  background-color: pink;
+  padding: 10px 0 10px 0;
+}
+.contents {
+  width: 100%;
+  background-color: skyblue;
+  max-width: 800px;
+  /* margin으로 중앙화 하는 방법 */
+  margin: 0 auto;
+}

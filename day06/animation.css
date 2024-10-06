@@ -1,0 +1,68 @@
+.box {
+  width: 100px;
+  height: 100px;
+  /* background-color: skyblue;
+  transition: all 1s cubic-bezier(0.42, 0.07, 0.61, 0.95); */
+  border: 1px solid black;
+  /* animation: abc 3s infinite; */
+  animation: rotate-center 1s ease-in-out infinite both;
+}
+/* 마우스 올렸을 때 */
+.box:hover {
+  /* background-color: pink;
+  border-radius: 100%;
+  transform: rotate(45deg) scale(2) translate(100px, 100px); */
+}
+@keyframes abc {
+  from {
+    background-color: skyblue;
+  }
+  to {
+    background-color: pink;
+    transform: scale(1.5) translate(50px, 50px);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.menu {
+  display: flex;
+}
+.text {
+  padding: 15px;
+  margin: 5px;
+  transition: all 0.3s cubic-bezier(0.36, 0, 0.76, 1);
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.text:hover {
+  background-color: #e6e6e6;
+}
+.head {
+  color: palevioletred;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.link {
+  padding: 14px 16px;
+  border-radius: 24px;
+}
+.link:hover {
+  background-color: #f2f2f2;
+}
+.ablyColor {
+  color: #ff5160;
+}
