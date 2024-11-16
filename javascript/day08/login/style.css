@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(34, 34, 34);
+}
+.clause {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.title {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: white;
+}
+#confirm {
+  width: 300px;
+  height: 50px;
+  margin-top: 24px;
+  background-color: gray;
+  border-radius: 35px;
+  border: none;
+  font-weight: 800;
+}
+
+.checkText1 {
+  color: white;
+}
+.checkText2 {
+  color: grey;
+}
