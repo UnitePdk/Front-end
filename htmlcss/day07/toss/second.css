@@ -1,0 +1,13 @@
+.second {
+  width: 100vw;
+  height: 600px;
+  background-color: #f9fafc;
+}
+.second > article {
+  padding-top: 200px;
+}
+.secondText {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 5px;
+}

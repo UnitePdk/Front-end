@@ -1,0 +1,51 @@
+.hobbyGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: fit-content;
+}
+.box5 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.hobbyBt {
+  position: relative;
+  border: none;
+  background: none;
+  width: 300px;
+  margin: 5px;
+}
+.hobbyBt > img {
+  transition: all 0.15s cubic-bezier(0.3, 0.09, 0.68, 0.94);
+  width: 290px;
+  height: 100%;
+}
+.hobbyText {
+  transition: all 0.15s cubic-bezier(0.3, 0.09, 0.68, 0.94);
+  opacity: 0%;
+  position: absolute;
+  top: 15%; /* 수직 중앙 */
+  left: 30%; /* 수평 중앙 */
+  transform: translate(-50%, -50%); /* 정확히 중앙에 배치 */
+}
+.text3 {
+  color: var(--color--primary); /* 텍스트 색상 */
+  font-size: var(--font-size--large); /* 글자 크기 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+}
+/* .hobbyBt > img:hover {
+  opacity: 50%;
+}
+.hobbyText:hover {
+  opacity: 100%;
+} */
+.hobbyBt:hover > img {
+  opacity: 50%;
+}
+.hobbyBt:hover .hobbyText {
+  opacity: 100%;
+}
+@media screen and (max-width: 768px) {
+  .hobbyGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

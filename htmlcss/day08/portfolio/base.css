@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "GangwonEdu_OTFBoldA";
+}
+:root {
+  /* 색상 */
+  --color--primary: #f8b3a4;
+  --color--secondary: #f78888;
+  --color--tertiary: #a26b7f;
+  --color--background: #ffeedd;
+  --color--text: #5e6970;
+  --color--link: #a4b7b9;
+
+  /* 폰트 사이즈 */
+  --font-size--base: 16px;
+  --font-size--x-small: 10px;
+  --font-size--small: 12px;
+  --font-size--normal: 18px;
+  --font-size--large: 30px;
+  --font-size--x-large: 40px;
+
+  /* 센터링 & 컨테이닝 */
+  --max-width--pc: 1200px;
+  --max-width--mobile: 768px;
+}
+.centerCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.centerRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background-color: var(--color--background);
+}
+.title1 {
+  color: var(--color--tertiary);
+  font-size: var(--font-size--x-large);
+}
+hr {
+  border: 0;
+  height: 3px;
+  background-color: var(--color--secondary);
+  width: 100%;
+  opacity: 30%;
+}
+.bar {
+  color: #576168;
+}
+@media screen and (max-width: 768px) {
+  .mobile {
+    opacity: 100%;
+  }
+}
