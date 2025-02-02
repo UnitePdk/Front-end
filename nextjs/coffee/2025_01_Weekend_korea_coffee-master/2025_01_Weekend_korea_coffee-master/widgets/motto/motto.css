@@ -1,0 +1,12 @@
+.heading {
+  position: relative;
+}
+.heading::before {
+  content: "Our Story";
+  position: absolute;
+  top: -50px;
+  left: 200px;
+  transform: rotate(-15deg);
+  font-size: 60px;
+  color: #e5c046;
+}
