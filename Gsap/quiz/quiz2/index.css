@@ -1,0 +1,11 @@
+body {
+  background-color: gray;
+}
+section {
+  height: 540px;
+}
+.text {
+  height: 200px;
+  color: white;
+  font-size: 72px;
+}
