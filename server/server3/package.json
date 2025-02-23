@@ -2,13 +2,14 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "xlsx": "^0.18.5"
   },
   "name": "server3",
   "version": "1.0.0",
   "main": "coffeeServer.js",
   "scripts": {
-    "start": "nodemon coffeeServer.js",
+    "start": "nodemon newCakeServer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

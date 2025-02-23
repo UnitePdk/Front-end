@@ -1,8 +1,16 @@
 const express = require("express");
 const cors = require("cors");
+const xlsx = require("xlsx");
 
 const app = express();
 app.use(cors());
+app.use(express.json());
+
+const coffeeXlsx = xlsx.readFile("coffee.xlsx");
+const firstCoffeeSheetName = coffeeXlsx.SheetNames[0];
+const firstCoffeeSheet = coffeeXlsx.Sheets[firstCoffeeSheetName];
+const firstCoffeeJson = xlsx.utils.sheet_to_json(firstCoffeeSheet);
+console.log(firstCoffeeJson);
 
 const menu = {
   icecream: [
@@ -16,11 +24,11 @@ const menu = {
     { name: "골라먹는 큐브", kcal: 1640, price: 29000 },
     { name: "구름이 퐁당퐁당", kcal: 1260, price: 26000 },
   ],
-  coffee: [
-    { name: "아메리카노", kcal: 5, price: 3000 },
-    { name: "카페라떼", kcal: 120, price: 3500 },
-    { name: "카페모카", kcal: 240, price: 4000 },
-  ],
+  // coffee: [
+  //   { name: "아메리카노", kcal: 5, price: 3000 },
+  //   { name: "카페라떼", kcal: 120, price: 3500 },
+  //   { name: "카페모카", kcal: 240, price: 4000 },
+  // ],
 };
 
 app.get("/", (request, response) => {
@@ -59,8 +67,30 @@ app.get("/cake", (request, response) => {
     response.json(filtered);
   }
 });
+app.post("/cake", (request, response) => {
+  const newCake = request.body;
+
+  if (!newCake.name || !newCake.price || !newCake.kcal) {
+    return response.json({ message: "데이터 오류" });
+  } else if (menu.cake.find((v) => v.name == newCake.name)) {
+    return response.json({ message: "데이터 오류" });
+  } else {
+    menu.cake.push(newCake);
+    return response.json();
+  }
+});
+
 app.get("/coffee", (request, response) => {
   response.json(menu.coffee);
+});
+app.post("/coffee", (request, response) => {
+  const newCoffee = request.body;
+  if (!newCoffee.name || !newCoffee.price || newCoffee.kcal) {
+    return response.json({ message: "데이터 오류" });
+  }
+  menu.coffee.find((v) => v.name == newCoffee.name);
+
+  menu.coffee.push(newCoffee);
 });
 
 app.listen(3000, () => {
